@@ -46,7 +46,7 @@ function App() {
                           <td>iPhone 8 plus</td>
                           <td>500</td>
                           <td>
-                            <span className="label label-warning">còn hàng</span>
+                            <span className="label label-warning">Còn hàng</span>
                           </td>
                           <td>
                           <button type="button" className="btn btn-success">Sửa</button>
