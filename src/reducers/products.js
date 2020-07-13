@@ -1,27 +1,11 @@
-const { act } = require("react-dom/test-utils");
+import * as Types from './../constants/ActionTypes';
 
-var initialState = [
-    {
-        id : 1,
-        name : 'iPhone X',
-        price : 500,
-        status : true
-    },
-    {
-        id : 2,
-        name : 'Samsung GLX',
-        price : 300,
-        status : true
-    },
-    {
-        id : 3,
-        name : 'Oppo',
-        price : 100,
-        status : false
-    }
-];
+var initialState = [];
 const products = (state = initialState, action) => {
     switch(action.type){
+        case Types.FETCH_PRODUCTS:
+            state = action.products;
+            return [...state];
         default: return [...state];
     }
 };
